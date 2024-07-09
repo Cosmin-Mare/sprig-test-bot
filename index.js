@@ -143,11 +143,10 @@ try {
     provider.awareness.setLocalStateField("bot", id);
     let firstUpdate = true;
     ydoc.getText("codemirror").insert(0, id);
-    console.log("Wrote")
     ydoc.on("update", () => {
         if(firstUpdate){
         }
-        console.log(ydoc.getText("codemirror").toString()+" ")
+        console.log(ydoc.getText("codemirror").toString()+"  ")
     });
     roomsListening.push({
         room: room,
